@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.f-outer {
+    >.f-inner {
+        width: wCon(1200,1400);
+        margin: 0 auto;
+        @include mq("md") {
+            width: vw(355,375);
+        }
+        >.f-logo {
+            width: 300px;
+        }
+        >nav {
+            margin-bottom: 50px;
+            >ul {
+                // width: calc(1000 / 1200 * 100%);
+                display: flex;
+                justify-content: center;
+                >li {
+                    width: calc(220 / 1200 * 100%);
+                    display: inline-block;
+                    text-align: center;
+                    >a {
+                        // width: 100%;
+                        // display: block;
+                    }
+                }
+            }
+        }
+    }
+    >p {
+        text-align: center;
+        font-size: 12px;
+    }
+}

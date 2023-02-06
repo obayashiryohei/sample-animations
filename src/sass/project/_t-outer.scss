@@ -1,0 +1,62 @@
+@use "global" as *;
+
+// .test {
+//   font-size: rem(100);
+//   background-color: $black;
+//   color: $white;
+// }
+
+// .menu {
+//   display: flex;  
+//   & li {
+//     margin-left: rem(20);
+//   }
+// }
+
+.t-outer {
+    margin-bottom: wCon(100,1000);
+    @include mq("md") {
+        margin-bottom: vw(100,375);
+    }        
+    >.t-inner {
+        >h2 {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: wCon(50,1000);
+            @include mq("md") {
+                font-size: vw(20,375);
+                margin-bottom: vw(50,375);
+            }        
+        }
+        >ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 60px 0;
+            @include mq("md") {
+                flex-direction: column;
+                gap: vw(30,375) 0;
+            }        
+            >li {
+                width: wCon(300,1000);
+                text-align: center;
+                @include mq("md") {
+                    width: 100%;
+                }        
+                >a {
+                    >dl {
+                        >dt {
+                            
+                            >img {
+
+                            }
+                        }
+                        >dd {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

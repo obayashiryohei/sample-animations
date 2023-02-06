@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.h-outer {
+    padding: wCon(50,1400) 0 0;
+    >.h-inner {
+        width: wCon(1200,1400);
+        margin: 0 auto 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mq("md") {
+            width: vw(355,375);
+            margin: 0 auto vw(100,375);
+        }    
+        >.h-logo {
+            width: 300px;
+        }
+        >nav {
+            width: 100%;
+            display: none;
+            >ul {
+                >li {
+                    >a {
+
+                    }
+                }
+            }
+        }
+        // >.h-hamburger {
+        //     span {
+        //     }
+        // }
+    }
+}
+
+// .l-inner {
+//   max-width: rem(540); //状況によって変える必要があるかも
+//   width: 100%;
+//   height: inherit;
+//   padding-right: $padding-sp;
+//   padding-left: $padding-sp;
+//   margin-right: auto;
+//   margin-left: auto;
+//   @include mq("md") {
+//     max-width: $inner + strip-unit($padding-pc) * 2;
+//     padding-right: $padding-pc;
+//     padding-left: $padding-pc;
+//   }
+// }
