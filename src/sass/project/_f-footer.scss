@@ -1,17 +1,22 @@
 @use "global" as *;
 
 .f-outer {
+    padding: 20px 0;
+    background: $black;
     >.f-inner {
         width: wCon(1200,1400);
         margin: 0 auto;
         @include mq("md") {
             width: vw(355,375);
         }
-        >.f-logo {
-            width: 300px;
-        }
+        // >.f-logo {
+        //     width: 300px;
+        // }
         >nav {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
+            @include mq("md") {
+                width: vw(30,375);
+            }
             >ul {
                 // width: calc(1000 / 1200 * 100%);
                 display: flex;
@@ -21,6 +26,7 @@
                     display: inline-block;
                     text-align: center;
                     >a {
+                        color: $white;
                         // width: 100%;
                         // display: block;
                     }
@@ -31,5 +37,6 @@
     >p {
         text-align: center;
         font-size: 12px;
+        color: $white;
     }
 }
