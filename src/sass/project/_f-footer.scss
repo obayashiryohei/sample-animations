@@ -14,9 +14,9 @@
         // }
         >nav {
             margin-bottom: 30px;
-            @include mq("md") {
-                width: vw(30,375);
-            }
+            // @include mq("md") {
+            //     width: vw(30,375);
+            // }
             >ul {
                 // width: calc(1000 / 1200 * 100%);
                 display: flex;
