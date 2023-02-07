@@ -641,11 +641,15 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 240%;
+      height: 290%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;      
       transform: translate(-100%,0) rotate(45deg);
+      @include mq("md") {
+        width: 92vw;
+        height: 40vw; 
+      }
     }
     &::after {
       content: "";
@@ -653,11 +657,15 @@
       bottom: 0;
       right: 0;
       width: 100%;
-      height: 240%;
+      height: 290%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;
       transform: translate(100%,0) rotate(45deg);
+      @include mq("md") {
+        width: 92vw;
+        height: 40vw;     
+      }
     }
     &:hover {
       color: $black;
@@ -694,11 +702,15 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 220%;
+      height: 290%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;      
       transform: translate(-100%,-50%) rotate(-45deg);
+      @include mq("md") {
+        width: 92vw;
+        height: 40vw;     
+      }
     }
     &::after {
       content: "";
@@ -706,11 +718,15 @@
       bottom: 0;
       right: 0;
       width: 100%;
-      height: 220%;
+      height: 290%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;
       transform: translate(100%,50%) rotate(-45deg);
+      @include mq("md") {
+        width: 92vw;
+        height: 40vw;     
+      }
     }
     &:hover {
       color: $black;
@@ -747,11 +763,15 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 240%;
+      height: 290%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;      
       transform: translate(-15% ,0%) rotate(45deg);
+      @include mq("md") {
+        width: 92vw;
+        height: 40vw;     
+      }
     }
     &::after {
       content: "";
@@ -759,11 +779,15 @@
       bottom: 0;
       right: 0;
       width: 100%;
-      height: 240%;
+      height: 290%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;
       transform: translate(15% ,0%) rotate(45deg);
+      @include mq("md") {
+        width: 92vw;
+        height: 40vw;     
+      }
     }
     &:hover {
       color: $white;
@@ -792,7 +816,7 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
-    transition: .3s ease-in-out;
+    transition: .7s ease-in-out;
     border: 1px solid $black;
     &::before {
       content: "";
@@ -802,9 +826,13 @@
       width: 100%;
       height: 220%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;      
       transform: translate(-20%,-50%) rotate(-45deg);
+      @include mq("md") {
+        width: 92vw;
+        height: 40vw;     
+      }
     }
     &::after {
       content: "";
@@ -814,9 +842,13 @@
       width: 100%;
       height: 220%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;
       transform: translate(20%,50%) rotate(-45deg);
+      @include mq("md") {
+        width: 92vw;
+        height: 40vw;     
+      }
     }
     &:hover {
       color: $white;
@@ -859,6 +891,10 @@
       transition: .7s ease-in-out;
       border-radius: 50%;
       z-index: -1;
+      @include mq("md") {
+        width: 130vw;
+        height: 130vw;     
+      }
     }
     &:hover {
       color: $black;
@@ -898,6 +934,10 @@
       background: $white;
       transition: .7s ease-in-out;
       z-index: -1;
+      @include mq("md") {
+        width: 130vw;
+        height: 130vw;     
+      }
     }
     &:hover {
       color: $black;
@@ -937,6 +977,10 @@
       transition: .7s ease-in-out;
       z-index: -1;
       border-radius: 50%;
+      @include mq("md") {
+        width: 130vw;
+        height: 130vw;     
+      }
     }
     &:hover {
       color: $black;
@@ -976,6 +1020,10 @@
       transition: .7s ease-in-out;
       z-index: -1;
       border-radius: 50%;
+      @include mq("md") {
+        width: 130vw;
+        height: 130vw;     
+      }
     }
     &:hover {
       color: $black;
@@ -1011,13 +1059,17 @@
       right: 0;
       bottom: 0;
       margin: auto;
-      width: 200px;
-      height: 200px;
+      width: 20vw;
+      height: 40vh;
       transform: scale(0);
       background: $white;
       transition: .5s ease-in-out;
       z-index: -1;
       border-radius: 50%;
+      @include mq("md") {
+        width: 40vw;
+        height: 30vh;     
+      }
     }
     &:hover {
       color: $black;
