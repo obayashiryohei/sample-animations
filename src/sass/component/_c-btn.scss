@@ -449,17 +449,17 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
-    transition: .3s ease-in-out;
+    transition: .7s ease-in-out;
     border: 1px solid $black;
     &::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 50%;
+      width: 55%;
       height: 100%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;      
       transform: translate(-100%,0);
     }
@@ -468,10 +468,10 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 50%;
+      width: 55%;
       height: 100%;
       background: $white;
-      transition: .3s ease-in-out;
+      transition: .7s ease-in-out;
       z-index: -1;
       transform: translate(100%,0);
     }
